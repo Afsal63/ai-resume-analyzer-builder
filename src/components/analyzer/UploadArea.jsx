@@ -21,8 +21,6 @@ export const UploadArea = ({ onFileProcessed, isLoading }) => {
     }
 
     try {
-      // In a real app we might parse the PDF locally or send the File blob to backend.
-      // We will send the file via FormData to the backend.
       const formData = new FormData();
       formData.append("file", file);
 

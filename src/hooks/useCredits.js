@@ -38,7 +38,7 @@ export function useCredits() {
     window.dispatchEvent(new Event('creditsUpdated'));
   };
 
-  const deductCredit = (amount = 1) => {
+  const deductCredit = (amount ) => {
     const currentCredits = parseInt(localStorage.getItem('nova_resume_credits') || FREE_CREDITS, 10);
     if (currentCredits >= amount) {
       updateCredits(currentCredits - amount);
