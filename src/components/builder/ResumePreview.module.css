@@ -1,0 +1,137 @@
+.paper {
+  background: white;
+  width: 100%;
+  height: 100%;
+  color: #111;
+  padding: 48px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.name {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.jobTitle {
+  font-size: 1.15rem;
+  color: #555;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.contactInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.divider {
+  height: 2px;
+  background: #333;
+  width: 100%;
+  margin: 24px 0;
+}
+
+.section {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+}
+
+.summaryText {
+  font-size: 0.95rem;
+  color: #333;
+  text-align: justify;
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experienceItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.expHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.expTitleRole {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.expCompany {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #111;
+}
+
+.expRole {
+  font-weight: 500;
+  font-style: italic;
+  color: #444;
+}
+
+.expDates {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.bulletList {
+  padding-left: 16px;
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.bulletList li {
+  margin-bottom: 4px;
+}
+
+.skillsList {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+}

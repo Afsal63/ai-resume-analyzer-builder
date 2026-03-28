@@ -1,0 +1,60 @@
+.builderContainer {
+  display: flex;
+  height: calc(100vh - 80px); /* Account for navbar */
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+.formSection {
+  flex: 1;
+  max-width: 50%;
+  height: 100%;
+  overflow-y: auto;
+  border-right: 1px solid var(--border-glass);
+  padding: 32px;
+  background: var(--bg-secondary);
+  box-shadow: 10px 0 30px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.previewSection {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+  background: #1e1e24; /* A slightly lighter dark canvas */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px;
+}
+
+.previewHeader {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.canvasContainer {
+  /* This container mimics an A4 paper shadow and constraints */
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  background: white; /* Resume preview has white background! */
+  border-radius: 4px;
+  width: 100%;
+  max-width: 800px; /* A4 width proxy */
+  min-height: 1000px; /* A4 aspect ratio proxy */
+}
+
+@media (max-width: 1024px) {
+  .builderContainer {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+  .formSection, .previewSection {
+    max-width: 100%;
+    min-height: 80vh;
+  }
+}
