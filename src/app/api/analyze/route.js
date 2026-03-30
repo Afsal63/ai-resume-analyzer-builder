@@ -5,7 +5,6 @@ import { GoogleGenAI } from "@google/genai";
 export async function POST(req) {
   try {
     const formData = await req.formData();
-    console.log('check formdata', formData)
 
     console.log(formData, "check formdata");
     const file = formData.get("file");

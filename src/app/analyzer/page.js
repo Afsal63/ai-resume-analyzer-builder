@@ -14,7 +14,7 @@ export default function AnalyzerPage() {
   const handleFileUpload = async (formData) => {
     console.log([...formData.entries()]);
 
-    if (!deductCredit(100)) {
+    if (!deductCredit(10)) {
       alert("You are out of AI Tokens! Please upgrade to Pro in the top menu.");
       return;
     }
